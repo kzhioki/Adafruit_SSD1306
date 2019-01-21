@@ -48,6 +48,7 @@
   typedef volatile RwReg    PortReg;
   typedef uint32_t          PortMask;
   #define HAVE_PORTREG
+#elif defined(ARDUINO_ARCH_SPRESENSE)
 #elif defined(__arm__) || defined(ARDUINO_FEATHER52)
   typedef volatile uint32_t PortReg;
   typedef uint32_t          PortMask;
